@@ -23,5 +23,8 @@ constructor(private router:Router){}
     this.router.navigate(['/Signup-page']);
   }
 
+  goToSemester(){
+    this.router.navigate(['/Signup-page']);
+  }
 
 }

@@ -20,5 +20,6 @@ export const routes: Routes = [
     {path:'Signup-page',component:SignUpPageComponent},
 
 
+
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

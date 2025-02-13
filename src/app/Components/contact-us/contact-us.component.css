@@ -1,24 +1,15 @@
 .container-fluid{
-    background-color: #374151 ;
-    height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color:whitesmoke;
 }
-
-.inner{
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    margin: auto;
-    height: 55%;
-    width: 75%;
-    border-radius: 20px;
-    background-color: #6B7280;
+.bi{
+    font-size: 45px !important;
 }
-
-.acknoledge{
-    font-size: 35px;
-    font-weight: 700;
-    color: white;
-}
-
-.contact-icons{
-    font-size: 40px;
+.bi:hover{
+    /* font-size: 50px !important; */
+    color: blue;
+        /* transition: all 0.3s ease-in-out; */
 }
