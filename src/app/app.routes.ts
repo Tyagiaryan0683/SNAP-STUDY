@@ -6,6 +6,7 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { ContactUsHeaderComponent } from './Components/contact-us-header/contact-us-header.component';
 import { LoginPageComponent } from './Components/login-page/login-page.component';
 import { SignUpPageComponent } from './Components/sign-up-page/sign-up-page.component';
+import { SemesterPageComponent } from './semester-page/semester-page.component';
 
 
 export const routes: Routes = [
@@ -18,6 +19,7 @@ export const routes: Routes = [
     // {path:'Footer',component:FooterComponent},
     {path:'Login-page',component:LoginPageComponent},
     {path:'Signup-page',component:SignUpPageComponent},
+    {path:'Semester-page',component:SemesterPageComponent},
 
 
 
