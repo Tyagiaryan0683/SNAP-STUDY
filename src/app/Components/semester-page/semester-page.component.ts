@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './semester-page.component.css'
 })
 export class SemesterPageComponent {
+  
   cardNo:any=[1,2,3,4,5,6,7,8,9,10];
 
 }

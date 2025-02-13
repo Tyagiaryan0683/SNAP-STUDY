@@ -4,7 +4,7 @@ import { ContactUsHeaderComponent } from './Components/contact-us-header/contact
 import { HomeComponent } from './Components/home/home.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink,RouterModule,ContactUsHeaderComponent,HomeComponent],
+  imports: [RouterOutlet,RouterLink,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
