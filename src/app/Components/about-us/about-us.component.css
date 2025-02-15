@@ -1,5 +1,5 @@
 .container-fluid{
-    background-color:rgb(226, 224, 224);; 
+    background-color:rgb(249, 249, 249); 
 }
 .paragraph{
     text-align: justify;
@@ -8,20 +8,26 @@
     line-height: 1.8rem;
     letter-spacing: 0.5px;
 }
-
-h1{
-    font-family: 'Lucida Sans';
-    font-weight: 700;
-    color: #7E22CE;
+ul {
+    padding: 0;
+    list-style-type: square ; 
 }
+
 .card{
+    margin-top: 80px;
     border: none;
     background-color: white;
+    box-shadow: 5px 5px 20px rgb(103, 104, 104);
 }
 
 .card-image{
     object-fit: contain; 
     border-radius: 8px;
     width: 100%;
+}
+.card-heading{
+    font-size: 35px;
+    font-weight: 500;
+    color: #29a84d;
 }
 
