@@ -3,10 +3,10 @@
 }
 .card {
     margin-top: 35px;
-    background-color: rgb(183, 180, 180);
+    background-color: white;
     box-shadow: 5px 5px 20px rgb(104, 104, 200);
     color: rgb(0, 0, 0);
-    border: 2px solid #4e4d4d;
+    border: 2px solid #adadad;
     height: 400px; 
     display: flex; 
     flex-direction: column;
@@ -14,12 +14,12 @@
 
 .card-title{
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .card-text{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .card-body{
@@ -47,7 +47,7 @@
 }
 
 .go-btn{
-    background-color: #4e4d4d;
+    background-color: rgb(158, 158, 158) ;
     border: none;
     height: 42px;
     font-size: 18px;
