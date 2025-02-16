@@ -1,0 +1,29 @@
+.container-fl {
+    background-color: whitesmoke;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  .card{
+    background-color: white;
+    box-shadow: 10px 10px 25px grey;
+  }
+  .oops{
+    font-size: 30px;
+    margin-bottom:30px;
+    /* color: black; */
+  }
+  .container h1 {
+    font-size: 6rem;
+    text-shadow: 5px 5px 15px rgba(255, 0, 0, 0.7);
+  }
+  
+  .btn-primary {
+    background-color: #006eff;
+    border-color: none;
+    height: 42px;
+  }
+  
+  .btn-primary:hover {
+    background-color: blue;
+  }

@@ -1,0 +1,26 @@
+.footer {
+    background-color: #007bff;
+    color: white;
+    padding: 40px 0;
+    font-weight: 700;
+  }
+  .footer a {
+    color: white;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .footer .form-control {
+    border-radius: 0;
+  }
+  .footer .btn {
+    border-radius: 0;
+  }
+  .fab{
+    font-size: 25px;
+  }
+
+  .logo-img{
+    width: 100px;
+    background-color: transparent;
+  }
