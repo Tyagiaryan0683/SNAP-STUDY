@@ -1,49 +1,77 @@
 <div class="container-fluid main-container ">
 
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-container">
+    <div class="container d-flex justify-content-center align-items-center vh-100 ">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-container p-3 p-sm-4">
+            <div class="text-center">
+                <i class="bi bi-person"></i>
+            </div>
             <div class="form-heading text-center mb-3 ">SIGN UP </div>
 
-            
+
             <div class="mb-3">
-                <label for="firstname" class="form-label ">First Name</label>
-                <input type="text" class="form-control " id="firstname" formControlName="firstname"  >
-                <div *ngIf="signupForm.controls['firstname'].invalid && (signupForm.controls['firstname'].touched || signupForm.controls['firstname'].dirty)">
-                    <p class="empty-alert" > <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue  </p>
+                <label for="firstname" class="form-label ">First Name <span class="empty-alert">*</span></label>
+                <input type="text" class="form-control " id="firstname" formControlName="firstname">
+                <div
+                    *ngIf="signupForm.controls['firstname'].invalid && (signupForm.controls['firstname'].touched || signupForm.controls['firstname'].dirty)">
+                    <p class="empty-alert"> <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue </p>
                 </div>
             </div>
 
 
             <div class="mb-3">
-                <label for="lastname" class="form-label ">Last Name</label>
-                <input type="text" class="form-control " id="lastname" formControlName="lastname"  >
+                <label for="lastname" class="form-label ">Last Name <span class="empty-alert">*</span></label>
+                <input type="text" class="form-control " id="lastname" formControlName="lastname">
+                <div
+                *ngIf="signupForm.controls['lastname'].invalid && (signupForm.controls['lastname'].touched || signupForm.controls['lastname'].dirty)">
+                <p class="empty-alert"> <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this
+                    field to continue </p>
             </div>
-            <div *ngIf="signupForm.controls['lastname'].invalid && (signupForm.controls['lastname'].touched || signupForm.controls['lastname'].dirty)">
-                <p class="empty-alert" > <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue  </p>
+            </div>
+           
+
+            <div class="mb-3">
+                <label for="email" class="form-label  ">Email <span class="empty-alert">*</span></label>
+                <input type="email" class="form-control " id="email" formControlName="email">
+                <div
+                *ngIf="signupForm.controls['email'].invalid && (signupForm.controls['email'].touched || signupForm.controls['email'].dirty)">
+                <p class="empty-alert"> <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue </p>
+            </div>
             </div>
 
             <div class="mb-3">
-                <label for="email" class="form-label  ">Email </label>
-                <input type="email" class="form-control " id="email" formControlName="email" >
+                <label for="phonenumber" class="form-label ">Phone Number <span class="empty-alert">*</span> </label>
+                <input type="text" class="form-control " id="phonenumber" formControlName="phonenumber" maxlength="10">
+                <div
+                *ngIf="signupForm.controls['phonenumber'].invalid && (signupForm.controls['phonenumber'].touched || signupForm.controls['phonenumber'].dirty)">
+                <p class="empty-alert"> <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue </p>
+            </div>
             </div>
 
             <div class="mb-3">
-                <label for="phonenumber" class="form-label ">Phone Number </label>
-                <input type="text" class="form-control " id="phonenumber" formControlName="phonenumber" maxlength="10" >
-            </div>
-            
-            <div class="mb-3">
-                <label for="password" class="form-label ">Password</label>
+                <label for="password" class="form-label ">Password <span class="empty-alert">*</span></label>
                 <input type="password" class="form-control" id="password" formControlName="password" maxlength="6">
+                <div
+                *ngIf="signupForm.controls['password'].invalid && (signupForm.controls['password'].touched || signupForm.controls['password'].dirty)">
+                <p class="empty-alert"> <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue </p>
+            </div>
             </div>
 
             <div class="mb-3">
-                <label for="confirmpassword" class="form-label ">Confirm Password</label>
-                <input type="password" class="form-control" id="confirmpassword" formControlName="confirmpassword"maxlength="6" >
+                <label for="confirmpassword" class="form-label ">Confirm Password <span class="empty-alert">*</span></label>
+                <input type="password" class="form-control" id="confirmpassword" formControlName="confirmpassword"
+                    maxlength="6">
+                    <div
+                *ngIf="signupForm.controls['confirmpassword'].invalid && (signupForm.controls['confirmpassword'].touched || signupForm.controls['confirmpassword'].dirty)">
+                <p class="empty-alert"> <span class="fa fa-info-circle error-info-icon mr-1"></span> Please fill this field to continue </p>
             </div>
-    
-            <button type="submit" class="btn  signup-btn w-100 mt-3 " [disabled]="signupForm.invalid">Sign up</button>
+            </div>
+
+            <div class="btn-container ">
+                <button type="submit" class="btn  signup-btn w-100 mt-3 " >Sign up</button>
+            </div>
         </form>
+
     </div>
+    
 
 </div>

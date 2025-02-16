@@ -1,39 +1,47 @@
+*{
+    font-family: "Space Mono";
+    font-weight: 900 !important;
+    
+}
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #F9FAFD;
-    /* background-image: url('/assets/images/backless.png'); */
+    background-color: whitesmoke;
     }
-
+.bi-person{
+    font-size: 50px;
+    color: grey;
+}
 .signup-container {
     width: 100%;
     margin-top: 50px;
     max-width: 450px;
-    max-height: 600px;
+    max-height: 650px;
     padding: 2rem;
-    background: #FFFFFF ;
-    border: 2px solid #1676BD;
-    border-radius: 6px;
+    background: white ;
+    border: 1px solid #1676BD;
+    border-radius: 8px;
     overflow-y: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    box-shadow: 5px 5px 20px grey;
 }
 
 ::-webkit-scrollbar {
     width: 6px;
+    margin-top: 50px;
 }
 
 ::-webkit-scrollbar-track {
     background: transparent;
-    margin-top: 2px;
+    margin-top: 20px;
     margin-bottom: 2px;
     opacity: 0; 
   transition: opacity 0.3s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white;
+    background: white ;
     border-radius: 7px;
 }
 
@@ -46,25 +54,43 @@
     font-weight: 500;
     color: #1676BD;
 }
-input {
-    background-color: white;
-}
 .form-control,
 .btn {
     height: 42px;
 }
 .form-control{
     border: 1px solid #656565;
+    background: white ;
+    height: 45px;
+
 }
 .form-label{
     color: #1676BD;
     font-size: 15px;
-    font-weight: 400;
-    /* margin-bottom: -50px; */
+    margin-bottom: -10px ;
+    font-weight: 600 !important;
 }
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0333ba;
+    box-shadow: 0 0 5px 2px #1676BD;
+}
+
+.form-control.ng-touched.ng-invalid,
+.form-control.ng-touched {
+    border-color: red;
+}
+
+.form-control.ng-touched.ng-valid,
+.form-control.ng-touched {
+    border-color: #656565;
+}
+
 .signup-btn {
     background-color: #1676BD;
     opacity: 1;
+    font-weight: 500;
     color: white;
     border: none;
 }
@@ -74,3 +100,4 @@ input {
     color: red;
     font-size: 12px;
 }
+

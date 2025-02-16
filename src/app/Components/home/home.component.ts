@@ -8,5 +8,5 @@ import { AboutUsComponent } from '../about-us/about-us.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  
 }

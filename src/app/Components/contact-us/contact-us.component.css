@@ -1,15 +1,31 @@
-.container-fluid{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color:whitesmoke;
+*{
+    font-family: "Coiny", serif;
 }
-.bi{
-    font-size: 45px !important;
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
 }
-.bi:hover{
-    /* font-size: 50px !important; */
+.container{
+    box-shadow: 10px 10px 25px #656565;
+    background-color: white;
+}
+
+.card{
+    border: none;
+}
+
+.heading{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.bi {
+    font-size: 35px !important;
+}
+.bi:hover {
     color: blue;
-        /* transition: all 0.3s ease-in-out; */
 }

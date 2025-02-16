@@ -4,7 +4,6 @@
 .paragraph{
     text-align: justify;
     font-size: 19px;
-    font-family: 'Lucida Sans',sans-serif;
     line-height: 1.8rem;
     letter-spacing: 0.5px;
 }
@@ -18,6 +17,12 @@ ul {
     border: none;
     background-color: white;
     box-shadow: 5px 5px 20px rgb(103, 104, 104);
+}
+.card:hover {
+    background-color: #d7d6d6 !important; 
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 5);
 }
 
 .card-image{

@@ -1,19 +1,30 @@
+*{
+    font-family: "Space Mono";
+    font-weight: 900 !important;
+    
+}
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #111827;
+    background-color: whitesmoke
 }
 
 .login-container {
     width: 100%;
-    max-width: 400px;
-    padding: 2rem;
-    background: #b2bfda;
-    border-radius: 7px;
+    max-width: 450px;
+    background: white ;
+    border: 1px solid #1676BD;
+    border-radius: 8px;
+    box-shadow: 15px 15px 45px gray;
 }
 
+.form-label{
+    color: #1676BD;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
 .form-heading{
     font-size: 25px;
     font-weight: 600;
@@ -21,8 +32,41 @@
 .form-control,.btn{
     height: 45px;
 }
+.form-control{
+    border: 1px solid #656565;
+    background: white ;
+    color: #656565;
+    font-weight:500;
+}
+.form-control:focus,
+.form-select:focus {
+    border-color: #0333ba;
+    box-shadow: 0 0 5px 2px #1676BD;
+}
+
+.form-control.ng-touched.ng-invalid,
+.form-control.ng-touched {
+    border-color: red;
+}
+
+.form-control.ng-touched.ng-valid,
+.form-control.ng-touched {
+    border-color: #656565;
+}
+
 .login-btn{
-    background-color: blue;
+    background-color: #1676BD;
     color: white;
     border: none;
 }
+
+.bi-person{
+    color: grey;
+    font-size: 45px;
+}
+.empty-alert{
+    color: red;
+    font-size: 12px;
+}
+
+
